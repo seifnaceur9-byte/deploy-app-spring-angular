@@ -1,13 +1,13 @@
 version: "3.3"
 services:
   angular-app:
-    image: seeeif/angular-app:latest
+    image: ./angular-app
     ports:
       - "0.0.0.0:4200:80"      
   spring-boot-app:
-    image: seeeif/springboot-app:latest
+    image: ./springboot/app
     ports:
-    - "8080:8081"
+    - "0.0.0.0:8080:8081"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/demo
       - SPRING_DATASOURCE_USERNAME=root
