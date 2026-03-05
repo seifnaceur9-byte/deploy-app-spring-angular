@@ -11,9 +11,6 @@ jobs:
 
     steps:
 
-      # ─────────────────────────────────────────
-      # Récupération du code source
-      # ─────────────────────────────────────────
       - name: Checkout du code source
         uses: actions/checkout@v3
 
