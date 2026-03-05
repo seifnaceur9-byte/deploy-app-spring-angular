@@ -1,11 +1,11 @@
 version: "3.3"
 services:
   angular-app:
-    image: seeeif/angular-app
+    image: seeeif/angular-app:latest
     ports:
       - "0.0.0.0:4200:80"      
   spring-boot-app:
-    image: seeeif/spring-app
+    image: seeeif/spring-app:latest
     ports:
       - "0.0.0.0:8081:8081"
     environment:
